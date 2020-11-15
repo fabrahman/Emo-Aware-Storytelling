@@ -48,4 +48,3 @@ Please cite our paper using the following bibtex:
   year={2020}
 }
 ```
-

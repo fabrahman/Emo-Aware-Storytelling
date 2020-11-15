@@ -1,4 +1,4 @@
-This respository contains **preliminary** code and data for the paper titled:
+This repository contains **preliminary** code and data for the paper titled:
 [Modeling Protagonist Emotions for Emotion-Aware Storytelling](https://arxiv.org/abs/2010.06822)
 *Faeze Brahman, and Snigdha Chaturvedi.* EMNLP 2020.
 

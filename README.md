@@ -45,10 +45,16 @@ The code is adapted from [Counterfactual Story Generation](https://github.com/qk
 
 Please cite our paper using the following bibtex:
 ```
-@inproceedings{emo-aware-2020,
-  title={Modeling Protagonist Emotions for Emotion-Aware Storytelling},
-  author={Faeze Brahman and Snigdha Chaturvedi},
-  booktitle={EMNLP},
-  year={2020}
+@inproceedings{brahman-chaturvedi-2020-modeling,
+    title = "Modeling Protagonist Emotions for Emotion-Aware Storytelling",
+    author = "Brahman, Faeze  and
+      Chaturvedi, Snigdha",
+    booktitle = "Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+    month = nov,
+    year = "2020",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/2020.emnlp-main.426",
+    pages = "5277--5294"
 }
 ```

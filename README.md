@@ -2,7 +2,7 @@
 
 This repository contains **preliminary** code and data for the paper titled:
 
-[Modeling Protagonist Emotions for Emotion-Aware Storytelling](https://arxiv.org/abs/2010.06822)             *Faeze Brahman, and Snigdha Chaturvedi.* EMNLP 2020.
+[Modeling Protagonist Emotions for Emotion-Aware Storytelling](https://www.aclweb.org/anthology/2020.emnlp-main.426/)                                                                                              *Faeze Brahman, and Snigdha Chaturvedi.* EMNLP 2020.
 
 ## Dataset: ROCStories
 The dataset can be downloaded from [here](https://drive.google.com/file/d/17UhNDjAvkm2BlFNTWVWibO2ak1VywAc5/view?usp=sharing) and unzipped in `data/` folder.
@@ -34,8 +34,6 @@ perl LIB/multi-bleu.perl data/test_x4.txt < <PATH_TO_GENERATED_TXT_FILE>
 ```
 * The `Distinct-n` scores in the paper use the code [here](https://github.com/abisee/story-generation-eval).
 
-The code is adapted from [Counterfactual Story Generation](https://github.com/qkaren/Counterfactual-StoryRW).
-
 ### Interactive Generation
 First, download the pretrained model from [here]() and untar it:
 ```
@@ -46,6 +44,8 @@ Then run following command to interactively generate emotion-aware stories:
 sh run_interactive.sh
 ```
 Running that, it will ask you to first enter a Title, and then a sequence of three emotions separated by space from joy, anger, sadness, fear, neutral! for example: joy sadness sadness!
+
+The code is adapted from [Counterfactual Story Generation](https://github.com/qkaren/Counterfactual-StoryRW).
 
 ## Reference
 

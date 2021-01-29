@@ -35,7 +35,7 @@ perl LIB/multi-bleu.perl data/test_x4.txt < <PATH_TO_GENERATED_TXT_FILE>
 * The `Distinct-n` scores in the paper use the code [here](https://github.com/abisee/story-generation-eval).
 
 ### Interactive Generation
-First, download the pretrained model from [here]() and untar it:
+First, download the pretrained model from [here](https://drive.google.com/file/d/19tRItFOK7opq-AgFVbzCU1v4Q5T8L4ob/view?usp=sharing) and untar it:
 ```
 tar -xvzf model_checkpoint.tar.gz
 ```

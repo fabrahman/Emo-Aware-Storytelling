@@ -19,7 +19,7 @@ import numpy as np
 import tensorflow as tf
 import texar as tx
 
-from utils2 import model_utils, processor
+from data_utils import model_utils, processor
 
 # pylint: disable=invalid-name, too-many-locals, too-many-statements, no-member
 # pylint: disable=too-many-branches
@@ -32,11 +32,10 @@ flags.DEFINE_string("checkpoint", None,
                     "Model checkpoint to load model weights from. Use "
                     "`--pretrain_checkpoint` instead if loading OpenAI "
                     "pretrained checkpoint.")
-flags.DEFINE_string("pretrain_checkpoint",
-                    "gpt2_pretrained_models/model_117M/model.ckpt",
+flags.DEFINE_string("pretrain_checkpoint", None,
                     "OpenAI pretrained model checkpoint. Ignored if "
                     "'--checkpoint' is specified.")
-flags.DEFINE_string("pretrain_model_dir", "gpt2_pretrained_models/model_345M",
+flags.DEFINE_string("pretrained_model_dir", None,
                      "The directory of pretrained model, for loading "
                      "vocabuary, etc.")
 flags.DEFINE_integer("seed", None, "Random seed.")
@@ -95,7 +94,7 @@ def main(_):
 
     # Create a data pre-processor for, e.g., BPE encoding
     proc = processor.get_encoder(
-        FLAGS.pretrain_model_dir)
+        FLAGS.pretrained_model_dir)
 
     context = tf.placeholder(tf.int32, [batch_size, None])
     context_length = tf.placeholder(tf.int32, [batch_size])

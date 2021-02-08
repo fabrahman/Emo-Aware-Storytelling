@@ -43,7 +43,7 @@ Then run following command to interactively generate emotion-aware stories:
 ```bash
 sh run_interactive.sh
 ```
-Running that, it will ask you to first enter a Title, and then a sequence of three emotions separated by space from joy, anger, sadness, fear, neutral! for example: joy sadness sadness!
+Running that, it will ask you to first enter a Title, and then a sequence of three emotions separated by space from joy, anger, sadness, fear, neutral! for example: joy sadness sadness
 
 The code is adapted from [Counterfactual Story Generation](https://github.com/qkaren/Counterfactual-StoryRW).
 
